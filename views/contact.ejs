@@ -1,0 +1,124 @@
+<%- include('partials/header', { activePage: 'contact' }) %>
+
+<main class="contact-page">
+
+    <!-- CONTACT INTRODUCTION -->
+    <section class="contact-hero">
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h1>Contact Me</h1>
+
+        <p>
+            Need someone for advice, collaborate or simply
+            want to connect? Feel free to get in touch!
+        </p>
+    </section>
+
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-container">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                I'm open to discussing, advising
+                & collaborating on interesting project ideas
+            </p>
+
+            <div class="contact-detail">
+                <h3>Email</h3>
+                <p>25039766@myrp.edu.sg</p>
+            </div>
+
+            <div class="contact-detail">
+                <h3>GitHub</h3>
+                <a href="https://github.com/25039766-AmirBak" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
+
+            <div class="contact-detail">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/amir-bakman-1b5008368/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-container">
+
+            <h2>Send Me a Message</h2>
+
+            <% if (success) { %>
+                <div class="form-success">
+                    Your message has been received successfully!
+                </div>
+            <% } %>
+
+            <% if (error) { %>
+                <div class="form-error">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <form action="/contact" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What would you like to discuss?"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,222 @@
+<!-- Include reusable navbar and HTML header -->
+<%- include('partials/header', { activePage: 'home' }) %>
+
+
+<!-- ================= HOME PAGE CONTENT ================= -->
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Bakman Eyvind Amir</h1>
+
+            <h2>
+                Software Developer
+            </h2>
+
+            <!-- TODO: Write your own introduction -->
+            <p class="hero-description">
+                I aim  to become a Software Developer, preferably
+                a back-end developer & experiment with ways to weave
+                AI assistance into my work
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="/portfolio" class="btn btn-primary">
+                    View Projects →
+                </a>
+
+                <a href="/contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- TODO: Replace with your own photograph -->
+            <img src="/images/profile.jpg"
+                 alt="Portrait of Amir Bakman">
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section featured-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">MY WORK</p>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                My most notable projects
+            </p>
+
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+
+                <div class="project-image">
+                    <!-- TODO: Add your first project screenshot -->
+                    <img src="/images/phishing.png"
+                         alt="Project 1 preview">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- TODO: Add actual project name -->
+                    <h3>Phishing Story</h3>
+
+                    <!-- TODO: Add project description -->
+                    <p>
+                        A 2D point-and-click exploration game aiming to
+                        inform users about varous scamming scenarios & how
+                        to avoid them
+                    </p>
+
+                    <a href="/projects/brainhack"
+                       class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+
+                <div class="project-image">
+                    <!-- TODO: Add your second project screenshot -->
+                    <img src="/images/skill.png"
+                         alt="Project 2 preview">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- TODO: Add actual project name -->
+                    <h3>SkillSwap</h3>
+
+                    <!-- TODO: Add project description -->
+                    <p>
+                        An app to ease the process of finding
+                        people with skills you want to learn &
+                        conducting a Skill Exchange
+                    </p>
+
+                    <a href="/projects/software-app"
+                       class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="section-action">
+
+            <a href="/portfolio" class="btn btn-primary">
+                Explore All Projects →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">WHAT I DO</p>
+
+            <h2>My Skills</h2>
+
+            <p>
+                Skills and areas of knowledge that I have
+                developed through my studies and projects.
+            </p>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- PROGRAMMING -->
+            <div class="skill-card">
+
+                <div class="skill-icon">⌨</div>
+
+                <h3>Programming</h3>
+
+                <!-- TODO: Update with your actual skills -->
+                <ul>
+                    <li>Web App Development</li>
+                    <li>Mobile App Development</li>
+                    <li>Software Testing</li>
+                    <li>Database Management</li>
+                </ul>
+
+            </div>
+
+
+            <!-- DEVELOPMENT -->
+            <div class="skill-card">
+
+                <div class="skill-icon">⚡</div>
+
+                <h3>Other Skills</h3>
+
+                <!-- TODO: Update with your actual skills -->
+                <ul>
+                    <li>Image Editing</li>
+                    <li>Data Analytics</li>
+                    <li>Software Development Process</li>
+                    <li>Business Process & Automation</li>
+                </ul>
+
+            </div>
+
+
+            <!-- TOOLS -->
+            <div class="skill-card">
+
+                <div class="skill-icon">⚙</div>
+
+                <h3>Tools</h3>
+
+                <!-- TODO: Update with tools you have used -->
+                <ul>
+                    <li>GitHub</li>
+                    <li>Tableau, JASP</li>
+                    <li>n8n, BotPress</li>
+                    <li>Power Automate</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Include reusable footer -->
+<%- include('partials/footer') %>

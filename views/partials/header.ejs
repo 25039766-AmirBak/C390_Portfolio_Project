@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amir Bakman | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- TODO: Replace with your actual logo -->
+            <a href="/" class="logo">AB</a>
+
+            <!-- Mobile menu button -->
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+
+                <a href="/"
+                   class="<%= activePage === 'home' ? 'active' : '' %>">
+                    Home
+                </a>
+
+                <a href="/about"
+                   class="<%= activePage === 'about' ? 'active' : '' %>">
+                    About
+                </a>
+
+                <a href="/portfolio"
+                   class="<%= activePage === 'portfolio' ? 'active' : '' %>">
+                    Portfolio
+                </a>
+
+                <a href="/contact"
+                   class="<%= activePage === 'contact' ? 'active' : '' %>">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
